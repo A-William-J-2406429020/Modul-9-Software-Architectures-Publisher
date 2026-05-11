@@ -8,3 +8,7 @@ b. Publisher maupun subscriber terhubung ke message broker yang persis sama. Dal
 3. Sending and Processing Event
 ![](./image/processingevent.png)
 Publisher (kanan) mengirimkan 5 pesan (berisi data Amir, Budi, Cica, Dira, dan Emir) ke message broker (RabbitMQ). Setelah kelima pesan terkirim, program selesai. Begitu Subscriber berjalan (kiri), ia terhubung ke RabbitMQ dan terus "mendengarkan" antrian pesan (user_created).
+
+4. Monitoring Chart
+![](./image/monitoringchart.png)
+RabbitMQ memantau seberapa banyak data yang lewat (saat kedua program dijalankan). Karena menerima rentetan 5 pesan hanya dalam waktu beberapa milidetik, "kecepatan" pengiriman pesan per detiknya melonjak tajam, sehingga menciptakan garis lonjakan berwarna ungu pada grafik tersebut. Setelah publisher selesai dan berhenti mengirim data, kecepatannya langsung turun kembali ke angka nol.

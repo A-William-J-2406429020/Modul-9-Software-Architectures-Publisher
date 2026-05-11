@@ -4,3 +4,7 @@ b. Publisher maupun subscriber terhubung ke message broker yang persis sama. Dal
 
 2. Running Rabbit MQ:
 ![](./image/runningrabbit.png)
+
+3. Sending and Processing Event
+![](./image/processingevent.png)
+Publisher (kanan) mengirimkan 5 pesan (berisi data Amir, Budi, Cica, Dira, dan Emir) ke message broker (RabbitMQ). Setelah kelima pesan terkirim, program selesai. Begitu Subscriber berjalan (kiri), ia terhubung ke RabbitMQ dan terus "mendengarkan" antrian pesan (user_created).
